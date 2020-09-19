@@ -12,7 +12,7 @@ int main(){
     d*=100; //N에서 뒤 두자리 00으로 가정한 수 만들기
     for(int i=0;i<100;i++){ //00~99
         if((d+i)%F==0){
-            if(F<10) cout<<"0"<<i<<"\n";
+            if(i<10) cout<<"0"<<i<<"\n";
             else cout<<i<<"\n";
             break;
         }
