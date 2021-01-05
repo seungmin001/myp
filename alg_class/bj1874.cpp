@@ -42,7 +42,7 @@ int main()
             { //크면 그때까지 push한 후 pop
                 while (num != s.top())
                 {
-                    s.push(count + 1);
+                    s.push(count + 1); //push ++count 하면 더 간단하게 가능.
                     count += 1;
                     ans += "+\n";
                 }
