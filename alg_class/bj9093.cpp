@@ -40,6 +40,8 @@ int main(){
             cout << s.top();
             s.pop();
         }
+        // sentence +="\n"
+        //for(char ch : sentence) { if(ch==' ' || ch=='\n') pop} 으로하면 한번에 해결 가능
         cout << "\n"; //다음 문장
     }
 
