@@ -17,7 +17,8 @@ struct Deque
 
     void push_front(int X)
     {
-        if(begin==0){
+        if (begin == 0)
+        {
             //맨끝부터 뒤로 한칸씩 밈
             for (int i = end - 1; i >= begin; i--)
             {
@@ -27,15 +28,16 @@ struct Deque
             //추가
             deque[0] = X;
         }
-        else{
-            begin-=1;
-            deque[begin]=X;
+        else
+        {
+            begin -= 1;
+            deque[begin] = X;
         }
     }
     void push_back(int X)
     {
         deque[end] = X;
-        end+=1;
+        end += 1;
     }
     int pop_front()
     {
@@ -51,7 +53,7 @@ struct Deque
     {
         if (!this->empty())
         {
-            end-=1;
+            end -= 1;
             return deque[end];
         }
         else
@@ -128,7 +130,6 @@ int main()
         else if (ins == "empty")
         {
             cout << d.empty() << "\n";
-            
         }
         else if (ins == "front")
         {
@@ -136,7 +137,7 @@ int main()
         }
         else if (ins == "back")
         {
-            cout<<d.back() << "\n";
+            cout << d.back() << "\n";
         }
     }
 
