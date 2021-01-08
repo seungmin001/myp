@@ -59,3 +59,11 @@ int main()
 
     return 0;
 }
+
+//출력해주는 함수 이용해도됨
+//void print(stack<char> &s){
+//     while(!s.empty()){
+//         cout<<s.top();
+//         s.pop();
+//     }
+// }
