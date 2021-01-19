@@ -3,6 +3,7 @@ using namespace std;
 
 //GCD & LCM
 int GCD(int x, int y)
+//euclidean
 {
     while (y != 0)
     {
